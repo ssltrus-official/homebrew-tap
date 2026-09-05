@@ -19,6 +19,8 @@ cask "code-sign-gui" do
   app "SSLTrusCodeSign.app"
 
   postflight do
-    system_command "/usr/bin/sudo", args: ["/usr/bin/xattr", "-rd", "com.apple.quarantine", "/Applications/SSLTrusCodeSign.app"]
+    system_command "/usr/bin/xattr",
+                   args: ["-rd", "com.apple.quarantine", "/Applications/SSLTrusCodeSign.app"],
+                   sudo: true
   end
 end
