@@ -8,6 +8,7 @@
 
 ```shell
 brew tap ssltrus-official/tap
+brew trust ssltrus-official/tap
 brew install ssltrus-official/tap/code-sign-cli
 ```
 
