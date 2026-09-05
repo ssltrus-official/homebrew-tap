@@ -1,0 +1,42 @@
+name: Update code-sign Homebrew packages
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.14"
+
+      - name: Update Formula and Cask
+        run: python .github/script/update_code_sign.py
+
+      - name: Validate package definitions
+        run: |
+          ruby -c Formula/code-sign-cli.rb
+          ruby -c Casks/code-sign-gui.rb
+          git diff --check
+
+      - name: Commit and push changes
+        run: |
+          if git diff --quiet -- Formula/code-sign-cli.rb Casks/code-sign-gui.rb; then
+            echo "Homebrew packages are already up to date."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Formula/code-sign-cli.rb Casks/code-sign-gui.rb
+          git commit -m "chore: update Homebrew packages"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
