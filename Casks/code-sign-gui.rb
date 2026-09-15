@@ -18,9 +18,9 @@ cask "code-sign-gui" do
   container nested: "SSLTrusCodeSign.dmg"
   app "SSLTrusCodeSign.app"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-rd", "com.apple.quarantine", "/Applications/SSLTrusCodeSign.app"],
-                   sudo: true
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args: ["-rd", "com.apple.quarantine", "/Applications/SSLTrusCodeSign.app"],
+        sudo: true
   end
 end
