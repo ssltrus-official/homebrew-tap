@@ -1,8 +1,8 @@
-# SSLTrus Homebrew Tap
+# sslTrus Homebrew Tap
 
 [English](README.md) · [简体中文](README.zh_CN.md)
 
-This tap provides the SSLTrus code signing command-line client and desktop
+This tap provides the sslTrus code signing command-line client and desktop
 application for macOS.
 
 Install the command-line client:

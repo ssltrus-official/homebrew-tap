@@ -1,8 +1,8 @@
-# SSLTrus Homebrew Tap
+# sslTrus Homebrew Tap
 
 [English](README.md) · [简体中文](README.zh_CN.md)
 
-此 Tap 为 macOS 提供 SSLTrus 代码签名命令行客户端和桌面应用。
+此 Tap 为 macOS 提供 sslTrus 代码签名命令行客户端和桌面应用。
 
 安装命令行客户端：
 

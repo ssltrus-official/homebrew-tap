@@ -1,5 +1,5 @@
 class CodeSignCli < Formula
-  desc "SSLTrus code signing command-line client"
+  desc "sslTrus code signing command-line client"
   homepage "https://www.ssltrus.cn/remotecodesigning/"
   version "1.6.1"
   depends_on :macos

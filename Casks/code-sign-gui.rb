@@ -11,8 +11,8 @@ cask "code-sign-gui" do
     sha256 "453f2033d40a0d0c041ff8d4c4078bef42eaff815cd2111998a2282300d20e43"
   end
 
-  name "SSLTrusCodeSign"
-  desc "SSLTrus code signing desktop application"
+  name "sslTrusCodeSign"
+  desc "sslTrus code signing desktop application"
   homepage "https://www.ssltrus.cn/remotecodesigning/"
 
   container nested: "SSLTrusCodeSign.dmg"
