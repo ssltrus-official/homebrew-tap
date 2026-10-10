@@ -23,3 +23,10 @@ brew install --cask ssltrus-official/tap/code-sign-gui
 
 GUI Cask 安装完成后会清除 macOS quarantine 属性，过程中可能要求输入
 管理员密码。
+
+## 许可证
+
+Copyright 2026 sslTrus.
+
+Formula、Cask、更新脚本和文档采用 [Apache License 2.0](LICENSE)。此许可证
+不涵盖通过此 Tap 下载的 CLI、GUI 二进制程序，这些程序遵循各自的许可条款。

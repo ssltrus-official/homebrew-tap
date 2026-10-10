@@ -25,3 +25,12 @@ Homebrew's package metadata.
 
 The GUI cask clears the macOS quarantine attribute after installation and may
 request the administrator password.
+
+## License
+
+Copyright 2026 sslTrus.
+
+The Formula, Cask, update scripts, and documentation are licensed under the
+[Apache License 2.0](LICENSE). This license does not cover CLI or GUI binaries
+downloaded through this tap; those binaries are subject to their own license
+terms.
