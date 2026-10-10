@@ -1,17 +1,17 @@
 class CodeSignCli < Formula
   desc "SSLTrus code signing command-line client"
   homepage "https://www.ssltrus.cn/remotecodesigning/"
-  version "1.5.4"
+  version "1.6.0"
   depends_on :macos
 
   on_arm do
-    url "https://pccs.ssltrus.cn/oss-code-sign-client/12463/cli/signtool-darwin-arm64-v1.5.4.zip"
-    sha256 "024f96cb39e929d00b516ad709f5f13b9e482b2322ebeea2530ad2c6ab88bf5e"
+    url "https://pccs.ssltrus.cn/oss-code-sign-client/12963/cli/signtool-darwin-arm64-v1.6.0.zip"
+    sha256 "72ace40dd5f5960a6c7eae39fcdd60dc24a52236cafb32c0298d3fba1bd8c313"
   end
 
   on_intel do
-    url "https://pccs.ssltrus.cn/oss-code-sign-client/12463/cli/signtool-darwin-amd64-v1.5.4.zip"
-    sha256 "2662bad5b2f3f9192ceec35c5307af0346640a174ca4e4add0fee5a5d3f2134a"
+    url "https://pccs.ssltrus.cn/oss-code-sign-client/12963/cli/signtool-darwin-amd64-v1.6.0.zip"
+    sha256 "ff916e2b7dc0db1d246f62eb2907be58fee8820951e5cb251402e510868757c0"
   end
 
   def install
