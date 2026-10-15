@@ -1,14 +1,14 @@
 cask "code-sign-gui" do
-  version "1.6.1"
+  version "1.6.3"
 
   on_arm do
-    url "https://pccs.ssltrus.cn/oss-code-sign-client/13002/gui/SSLTrusCodeSign-darwin-arm64-v1.6.1.zip"
-    sha256 "5a89a305178ea3cc4078787cf12a878c6fcead5c808d9527d83d1cad0953c833"
+    url "https://pccs.ssltrus.cn/oss-code-sign-client/13122/gui/SSLTrusCodeSign-darwin-arm64-v1.6.3.zip"
+    sha256 "7613b9bb87bcc4335b56b099d112f20aeaf3d7f7bbcbf06ed65a2cc3d3f0bb0a"
   end
 
   on_intel do
-    url "https://pccs.ssltrus.cn/oss-code-sign-client/13002/gui/SSLTrusCodeSign-darwin-amd64-v1.6.1.zip"
-    sha256 "453f2033d40a0d0c041ff8d4c4078bef42eaff815cd2111998a2282300d20e43"
+    url "https://pccs.ssltrus.cn/oss-code-sign-client/13122/gui/SSLTrusCodeSign-darwin-amd64-v1.6.3.zip"
+    sha256 "27f00dc89817355d9ad2464feeba7a8c183ed665c206b166b1dbaf004d72fdcc"
   end
 
   name "sslTrusCodeSign"
